@@ -1,0 +1,82 @@
+body{
+	background: rgb(128, 128, 128);
+	padding-top: 120px;
+}
+
+img{
+	display: block;
+}
+
+	.oka_jigsaw{
+		position: relative;
+		overflow: hidden;
+		border: 10px solid rgba(255, 255, 255, 1);
+		border-radius: 3px;
+		box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+		margin: 0 auto;
+	}
+
+		.oka_jigsaw span,.oka_jigsaw p{
+			position: absolute;
+			display: block;
+			padding: 6px 10px;
+			border: 1px solid rgba(0, 0, 0, 1);
+			left: 10px;
+			z-index: 99;
+			color: #fff;
+			background-color: rgba(0, 0, 0, 0.8);
+			border-radius: 3px;
+		}
+
+		.oka_jigsaw span{
+			top: 10px;
+			font-size: 12px;
+		}
+
+		.oka_jigsaw p{
+			bottom: 10px;
+			font-size: 14px;
+			margin: 0;
+		}
+
+		.oka_jigsaw .mini_pic{
+			position: absolute;
+			display: block;
+			width: 80px;
+			right: 0;
+			bottom: 0;
+			opacity: .6;
+			z-index: 99;
+			border: 1px solid #fff;
+		}
+
+		.oka_jigsaw .mini_pic:hover{
+			opacity: 1;
+		}
+
+		.oka_jigsaw:after{
+			content: '';
+			display: block;
+			height: 0;
+			visibility: hidden;
+			clear: both;
+		}
+
+		.jigsaw{
+			position: absolute;
+			float: left;
+		}
+
+		.opacity{
+			opacity: .2;
+		}
+
+		.float{
+			position: static;
+			float: left;
+			margin: 4px;
+		}
+
+		.box_shadow{
+			box-shadow: 0 0 20px rgba(0, 0, 0, 0.8) inset;
+		}
